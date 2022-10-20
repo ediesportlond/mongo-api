@@ -3,6 +3,6 @@ import { uri } from "./secrets.js";
 
 export default function dbConnect() {
     const client = new MongoClient(uri);
-    return client.db("");
+    return client.db("mydatabase");
 }
 
